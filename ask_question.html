@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Question</title>
+</head>
+<body>
+    <h1>Ask Question</h1>
+    <form action="/ask" method="post">
+        <input type="hidden" name="text_file_path" value="{{ text_file_path }}">
+        <label for="question">Question:</label><br>
+        <textarea id="question" name="question" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Ask">
+    </form>
+</body>
+</html>
